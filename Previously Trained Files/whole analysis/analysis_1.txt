@@ -1,0 +1,50 @@
+Run Number: 1
+Run Time: 2026-03-09 21:43:40
+
+train shape: (594194, 21)
+test shape: (254655, 20)
+train columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+test columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges']
+target unique values after mapping: [0 1]
+target dtype after mapping: int64
+
+Model Params:
+objective: binary:logistic
+eval_metric: auc
+max_depth: 6
+eta: 0.05
+subsample: 0.8
+colsample_bytree: 0.8
+min_child_weight: 3
+seed: 42
+
+========== Fold 1 ==========
+Fold 1 AUC: 0.901960
+Best iteration: 842
+Saved model: ./models/xgb_fold1_run1.json
+
+========== Fold 2 ==========
+Fold 2 AUC: 0.902447
+Best iteration: 743
+Saved model: ./models/xgb_fold2_run1.json
+
+========== Fold 3 ==========
+Fold 3 AUC: 0.902548
+Best iteration: 768
+Saved model: ./models/xgb_fold3_run1.json
+
+========== Fold 4 ==========
+Fold 4 AUC: 0.902774
+Best iteration: 698
+Saved model: ./models/xgb_fold4_run1.json
+
+========== Fold 5 ==========
+Fold 5 AUC: 0.901087
+Best iteration: 869
+Saved model: ./models/xgb_fold5_run1.json
+
+Overall CV AUC: 0.902151
+
+OOF file: ./Previously Trained Files\oof_self\oof_predictions_1.csv
+Submission file: ./Previously Trained Files\sub_self\submission_1.csv
+Analysis file: ./Previously Trained Files\whole analysis\analysis_1.txt
