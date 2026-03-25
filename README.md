@@ -9,7 +9,7 @@
 
 English | [中文](#中文说明)
 
-Copyright (c) 2024 yuxuan zhou @mornscience All rights reserved.
+Copyright (c) 2024  All rights reserved.
 
 ## Table of Contents
 
