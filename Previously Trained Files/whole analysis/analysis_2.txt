@@ -1,0 +1,78 @@
+Run Number: 2
+Run Time: 2026-03-25 10:06:19
+
+Train Shape: (594194, 21)
+Test Shape: (254655, 20)
+Feature Count: 19
+Feature Columns: ['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges']
+
+Target Distribution: {0: 460377, 1: 133817}
+Target Distribution Ratio: {0: 0.774792, 1: 0.225208}
+
+XGBoost Parameters:
+objective: binary:logistic
+eval_metric: auc
+max_depth: 6
+eta: 0.05
+subsample: 0.8
+colsample_bytree: 0.8
+min_child_weight: 3
+max_bin: 256
+tree_method: hist
+nthread: -1
+seed: 42
+
+========== Fold 1 ==========
+Fold 1 AUC: 0.916166
+Best Iteration: 646
+Best Train AUC: 0.922604
+Best Valid AUC: 0.916166
+Model Path: /mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold1_run2.json
+
+========== Fold 2 ==========
+Fold 2 AUC: 0.917178
+Best Iteration: 601
+Best Train AUC: 0.921936
+Best Valid AUC: 0.917178
+Model Path: /mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold2_run2.json
+
+========== Fold 3 ==========
+Fold 3 AUC: 0.916604
+Best Iteration: 708
+Best Train AUC: 0.922724
+Best Valid AUC: 0.916604
+Model Path: /mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold3_run2.json
+
+========== Fold 4 ==========
+Fold 4 AUC: 0.917682
+Best Iteration: 682
+Best Train AUC: 0.922441
+Best Valid AUC: 0.917682
+Model Path: /mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold4_run2.json
+
+========== Fold 5 ==========
+Fold 5 AUC: 0.914846
+Best Iteration: 559
+Best Train AUC: 0.922221
+Best Valid AUC: 0.914846
+Model Path: /mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold5_run2.json
+
+Run Summary
+Detected Categorical Columns: ['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod']
+Fold AUCs: [0.916166, 0.917178, 0.916604, 0.917682, 0.914846]
+Overall CV AUC: 0.916488
+Best Iterations: [646, 601, 708, 682, 559]
+Model Paths: ['/mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold1_run2.json', '/mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold2_run2.json', '/mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold3_run2.json', '/mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold4_run2.json', '/mnt/d/William/SMBU/Kaggle/S6E3/models/xgb_fold5_run2.json']
+OOF Path: /mnt/d/William/SMBU/Kaggle/S6E3/Previously Trained Files/oof_self/oof_predictions_2.csv
+Submission Path: /mnt/d/William/SMBU/Kaggle/S6E3/Previously Trained Files/sub_self/submission_2.csv
+Fold AUC Plot: /mnt/d/William/SMBU/Kaggle/S6E3/Previously Trained Files/visuals/fold_auc_2.png
+Summary Plot: /mnt/d/William/SMBU/Kaggle/S6E3/Previously Trained Files/visuals/summary_2.png
+Feature Importance Plot: /mnt/d/William/SMBU/Kaggle/S6E3/Previously Trained Files/visuals/feature_importance_2.png
+OOF Distribution Plot: /mnt/d/William/SMBU/Kaggle/S6E3/Previously Trained Files/visuals/oof_distribution_2.png
+Visuals Directory: /mnt/d/William/SMBU/Kaggle/S6E3/Previously Trained Files/visuals
+Eval History Path: /mnt/d/William/SMBU/Kaggle/S6E3/Previously Trained Files/whole analysis/eval_history_2.json
+Training Time: 00:11:41.19
+
+Experiment Notes:
+This run keeps the XGBoost pipeline intact, centralizes output management,
+uses fold-safe target encoding for categorical features, and writes visual summaries.
