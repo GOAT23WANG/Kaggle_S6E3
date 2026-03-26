@@ -1,2 +1,8 @@
+models/
+Previously Trained Files/
+Memory/
+
 __pycache__/
-*.pyc
+*.py[cod]
+
+.ipynb_checkpoints/
