@@ -1,0 +1,53 @@
+Run Number: 3
+Run Time: 2026-03-26 14:45:07
+train shape: (594194, 21)
+test shape: (254655, 20)
+orig shape: (7043, 21)
+
+Config:
+n_folds=5
+inner_folds=3
+num_boost_round=2000
+early_stopping_rounds=200
+
+train feature shape: (594194, 119)
+test feature shape: (254655, 118)
+
+Model Params:
+objective: binary:logistic
+eval_metric: auc
+max_depth: 5
+eta: 0.0063
+subsample: 0.81
+colsample_bytree: 0.32
+min_child_weight: 6
+reg_alpha: 3.5017
+reg_lambda: 1.2925
+gamma: 0.79
+seed: 42
+
+Fold 1 AUC: 0.917934
+Best iteration: 1999
+Saved model: ./models\xgb_fold1_run3.json
+
+Fold 2 AUC: 0.918695
+Best iteration: 1999
+Saved model: ./models\xgb_fold2_run3.json
+
+Fold 3 AUC: 0.918042
+Best iteration: 1999
+Saved model: ./models\xgb_fold3_run3.json
+
+Fold 4 AUC: 0.919182
+Best iteration: 1999
+Saved model: ./models\xgb_fold4_run3.json
+
+Fold 5 AUC: 0.916507
+Best iteration: 1999
+Saved model: ./models\xgb_fold5_run3.json
+
+Overall CV AUC: 0.918062
+
+OOF file: ./Previously Trained Files\oof_self\oof_predictions_3.csv
+Submission file: ./Previously Trained Files\sub_self\submission_3.csv
+Analysis file: ./Previously Trained Files\whole analysis\analysis_3.txt
