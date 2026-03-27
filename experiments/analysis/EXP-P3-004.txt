@@ -1,0 +1,122 @@
+Run Number: 14
+Experiment ID: EXP-P3-004
+Run Profile: unified_v16
+Parent Baseline: EXP-P0-003
+Run Time: 2026-03-27 04:29:37
+train shape: (594194, 21)
+test shape: (254655, 20)
+train columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+test columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges']
+
+Feature flags: {'orig_proba': True, 'distribution': True, 'digit': True, 'ngram': True}
+Ridge feature: True
+Multi-seed: True (n_seeds=5)
+Unified feature count before encoding: 121
+Model Params:
+n_estimators: 50000
+learning_rate: 0.0063
+max_depth: 5
+subsample: 0.81
+colsample_bytree: 0.32
+min_child_weight: 6
+reg_alpha: 3.5017
+reg_lambda: 1.2925
+gamma: 0.79
+random_state: 42
+early_stopping_rounds: 500
+objective: binary:logistic
+eval_metric: auc
+enable_categorical: False
+device: cuda
+tree_method: hist
+verbosity: 0
+
+--- Fold 1/20 ---
+Unified feature count for XGBoost: 179
+Multi-seed: averaged 5 seeds
+Fold 1 AUC: 0.920682
+
+--- Fold 2/20 ---
+Multi-seed: averaged 5 seeds
+Fold 2 AUC: 0.918757
+
+--- Fold 3/20 ---
+Multi-seed: averaged 5 seeds
+Fold 3 AUC: 0.918186
+
+--- Fold 4/20 ---
+Multi-seed: averaged 5 seeds
+Fold 4 AUC: 0.919167
+
+--- Fold 5/20 ---
+Multi-seed: averaged 5 seeds
+Fold 5 AUC: 0.923314
+
+--- Fold 6/20 ---
+Multi-seed: averaged 5 seeds
+Fold 6 AUC: 0.918687
+
+--- Fold 7/20 ---
+Multi-seed: averaged 5 seeds
+Fold 7 AUC: 0.916839
+
+--- Fold 8/20 ---
+Multi-seed: averaged 5 seeds
+Fold 8 AUC: 0.920596
+
+--- Fold 9/20 ---
+Multi-seed: averaged 5 seeds
+Fold 9 AUC: 0.919020
+
+--- Fold 10/20 ---
+Multi-seed: averaged 5 seeds
+Fold 10 AUC: 0.918702
+
+--- Fold 11/20 ---
+Multi-seed: averaged 5 seeds
+Fold 11 AUC: 0.919028
+
+--- Fold 12/20 ---
+Multi-seed: averaged 5 seeds
+Fold 12 AUC: 0.919884
+
+--- Fold 13/20 ---
+Multi-seed: averaged 5 seeds
+Fold 13 AUC: 0.921855
+
+--- Fold 14/20 ---
+Multi-seed: averaged 5 seeds
+Fold 14 AUC: 0.920808
+
+--- Fold 15/20 ---
+Multi-seed: averaged 5 seeds
+Fold 15 AUC: 0.917571
+
+--- Fold 16/20 ---
+Multi-seed: averaged 5 seeds
+Fold 16 AUC: 0.921699
+
+--- Fold 17/20 ---
+Multi-seed: averaged 5 seeds
+Fold 17 AUC: 0.919259
+
+--- Fold 18/20 ---
+Multi-seed: averaged 5 seeds
+Fold 18 AUC: 0.917929
+
+--- Fold 19/20 ---
+Multi-seed: averaged 5 seeds
+Fold 19 AUC: 0.918404
+
+--- Fold 20/20 ---
+Multi-seed: averaged 5 seeds
+Fold 20 AUC: 0.915643
+
+Overall CV AUC: 0.919294
+
+OOF file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/oof_self/oof_predictions_14.csv
+Submission file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/sub_self/submission_14.csv
+Analysis file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/whole analysis/analysis_14.txt
+Experiment OOF file: /root/aicloud-data/Kaggle_S6E3/experiments/oof/EXP-P3-004.csv
+Experiment Submission file: /root/aicloud-data/Kaggle_S6E3/experiments/submissions/EXP-P3-004.csv
+Experiment Analysis file: /root/aicloud-data/Kaggle_S6E3/experiments/analysis/EXP-P3-004.txt

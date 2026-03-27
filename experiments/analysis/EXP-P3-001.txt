@@ -1,0 +1,72 @@
+Run Number: 11
+Experiment ID: EXP-P3-001
+Run Profile: unified_v16
+Parent Baseline: EXP-P0-003
+Run Time: 2026-03-26 11:01:50
+train shape: (594194, 21)
+test shape: (254655, 20)
+train columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+test columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges']
+
+Feature flags: {'orig_proba': True, 'distribution': True, 'digit': True, 'ngram': True}
+Ridge feature: True
+Multi-seed: False (n_seeds=5)
+Unified feature count before encoding: 121
+Model Params:
+n_estimators: 50000
+learning_rate: 0.0063
+max_depth: 5
+subsample: 0.81
+colsample_bytree: 0.32
+min_child_weight: 6
+reg_alpha: 3.5017
+reg_lambda: 1.2925
+gamma: 0.79
+random_state: 42
+early_stopping_rounds: 500
+objective: binary:logistic
+eval_metric: auc
+enable_categorical: False
+device: cuda
+tree_method: hist
+verbosity: 0
+
+--- Fold 1/10 ---
+Unified feature count for XGBoost: 179
+Fold 1 AUC: 0.919541
+
+--- Fold 2/10 ---
+Fold 2 AUC: 0.918671
+
+--- Fold 3/10 ---
+Fold 3 AUC: 0.920972
+
+--- Fold 4/10 ---
+Fold 4 AUC: 0.918567
+
+--- Fold 5/10 ---
+Fold 5 AUC: 0.918883
+
+--- Fold 6/10 ---
+Fold 6 AUC: 0.919261
+
+--- Fold 7/10 ---
+Fold 7 AUC: 0.921211
+
+--- Fold 8/10 ---
+Fold 8 AUC: 0.919585
+
+--- Fold 9/10 ---
+Fold 9 AUC: 0.918515
+
+--- Fold 10/10 ---
+Fold 10 AUC: 0.916974
+
+Overall CV AUC: 0.919210
+
+OOF file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/oof_self/oof_predictions_11.csv
+Submission file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/sub_self/submission_11.csv
+Analysis file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/whole analysis/analysis_11.txt
+Experiment OOF file: /root/aicloud-data/Kaggle_S6E3/experiments/oof/EXP-P3-001.csv
+Experiment Submission file: /root/aicloud-data/Kaggle_S6E3/experiments/submissions/EXP-P3-001.csv
+Experiment Analysis file: /root/aicloud-data/Kaggle_S6E3/experiments/analysis/EXP-P3-001.txt

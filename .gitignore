@@ -1,0 +1,24 @@
+# Python cache and local runtime files
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+
+# Local environments
+.conda/
+.venv/
+venv/
+env/
+
+# Local data and generated artifacts
+data/
+models/
+Previously Trained Files/
+
+# Personal notes and editor state
+Memory/
+.vscode/
+
+# OS noise
+.DS_Store
+Thumbs.db

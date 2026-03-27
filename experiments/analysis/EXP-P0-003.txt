@@ -1,0 +1,80 @@
+Run Number: 4
+Experiment ID: EXP-P0-003
+Run Profile: unified_v16
+Parent Baseline: EXP-P0-002
+Run Time: 2026-03-22 09:49:12
+train shape: (594194, 21)
+test shape: (254655, 20)
+train columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+test columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges']
+
+Feature flags: {'orig_proba': True, 'distribution': True, 'digit': True, 'ngram': True}
+Unified feature count before encoding: 121
+Model Params:
+n_estimators: 50000
+learning_rate: 0.0063
+max_depth: 5
+subsample: 0.81
+colsample_bytree: 0.32
+min_child_weight: 6
+reg_alpha: 3.5017
+reg_lambda: 1.2925
+gamma: 0.79
+random_state: 42
+early_stopping_rounds: 500
+objective: binary:logistic
+eval_metric: auc
+enable_categorical: False
+device: cuda
+tree_method: hist
+verbosity: 0
+
+--- Fold 1/10 ---
+Unified feature count for XGBoost: 178
+Fold 1 AUC: 0.919504
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold1_run4.json
+
+--- Fold 2/10 ---
+Fold 2 AUC: 0.918540
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold2_run4.json
+
+--- Fold 3/10 ---
+Fold 3 AUC: 0.920919
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold3_run4.json
+
+--- Fold 4/10 ---
+Fold 4 AUC: 0.918626
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold4_run4.json
+
+--- Fold 5/10 ---
+Fold 5 AUC: 0.918898
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold5_run4.json
+
+--- Fold 6/10 ---
+Fold 6 AUC: 0.919250
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold6_run4.json
+
+--- Fold 7/10 ---
+Fold 7 AUC: 0.921080
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold7_run4.json
+
+--- Fold 8/10 ---
+Fold 8 AUC: 0.919567
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold8_run4.json
+
+--- Fold 9/10 ---
+Fold 9 AUC: 0.918486
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold9_run4.json
+
+--- Fold 10/10 ---
+Fold 10 AUC: 0.916905
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold10_run4.json
+
+Overall CV AUC: 0.919170
+
+OOF file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/oof_self/oof_predictions_4.csv
+Submission file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/sub_self/submission_4.csv
+Analysis file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/whole analysis/analysis_4.txt
+Experiment OOF file: /root/aicloud-data/Kaggle_S6E3/experiments/oof/EXP-P0-003.csv
+Experiment Submission file: /root/aicloud-data/Kaggle_S6E3/experiments/submissions/EXP-P0-003.csv
+Experiment Analysis file: /root/aicloud-data/Kaggle_S6E3/experiments/analysis/EXP-P0-003.txt

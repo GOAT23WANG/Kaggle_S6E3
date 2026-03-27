@@ -1,0 +1,55 @@
+Run Number: 2
+Experiment ID: EXP-P0-001
+Parent Baseline: BASE-SIMPLE-5FOLD-TE-XGB
+Run Time: 2026-03-21 10:44:34
+
+train shape: (594194, 21)
+test shape: (254655, 20)
+train columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+test columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges']
+target unique values after mapping: [0 1]
+target dtype after mapping: int64
+
+Model Params:
+objective: binary:logistic
+eval_metric: auc
+max_depth: 6
+eta: 0.05
+subsample: 0.8
+colsample_bytree: 0.8
+min_child_weight: 3
+seed: 42
+
+========== Fold 1 ==========
+Fold 1 AUC: 0.901998
+Best iteration: 688
+Saved model: ./models/xgb_fold1_run2.json
+
+========== Fold 2 ==========
+Fold 2 AUC: 0.902329
+Best iteration: 759
+Saved model: ./models/xgb_fold2_run2.json
+
+========== Fold 3 ==========
+Fold 3 AUC: 0.902488
+Best iteration: 797
+Saved model: ./models/xgb_fold3_run2.json
+
+========== Fold 4 ==========
+Fold 4 AUC: 0.902760
+Best iteration: 774
+Saved model: ./models/xgb_fold4_run2.json
+
+========== Fold 5 ==========
+Fold 5 AUC: 0.901032
+Best iteration: 725
+Saved model: ./models/xgb_fold5_run2.json
+
+Overall CV AUC: 0.902111
+
+OOF file: ./Previously Trained Files/oof_self/oof_predictions_2.csv
+Submission file: ./Previously Trained Files/sub_self/submission_2.csv
+Analysis file: ./Previously Trained Files/whole analysis/analysis_2.txt
+Experiment OOF file: ./experiments/oof/EXP-P0-001.csv
+Experiment Submission file: ./experiments/submissions/EXP-P0-001.csv
+Experiment Analysis file: ./experiments/analysis/EXP-P0-001.txt

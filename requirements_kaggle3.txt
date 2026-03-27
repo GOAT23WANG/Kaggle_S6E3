@@ -1,0 +1,16 @@
+category_encoders==2.9.0
+joblib==1.5.3
+numpy==2.4.3
+nvidia-nccl-cu12==2.29.7
+packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1769093650/work
+pandas==3.0.1
+patsy==1.0.2
+python-dateutil==2.9.0.post0
+scikit-learn==1.8.0
+scipy==1.17.1
+six==1.17.0
+statsmodels==0.14.6
+threadpoolctl==3.6.0
+tqdm==4.67.3
+xgboost==3.2.0
+

@@ -1,0 +1,102 @@
+Run Number: 12
+Experiment ID: EXP-P3-002
+Run Profile: unified_v16
+Parent Baseline: EXP-P0-003
+Run Time: 2026-03-26 11:18:48
+train shape: (594194, 21)
+test shape: (254655, 20)
+train columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+test columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges']
+
+Feature flags: {'orig_proba': True, 'distribution': True, 'digit': True, 'ngram': True}
+Ridge feature: False
+Multi-seed: False (n_seeds=5)
+Unified feature count before encoding: 121
+Model Params:
+n_estimators: 50000
+learning_rate: 0.0063
+max_depth: 5
+subsample: 0.81
+colsample_bytree: 0.32
+min_child_weight: 6
+reg_alpha: 3.5017
+reg_lambda: 1.2925
+gamma: 0.79
+random_state: 42
+early_stopping_rounds: 500
+objective: binary:logistic
+eval_metric: auc
+enable_categorical: False
+device: cuda
+tree_method: hist
+verbosity: 0
+
+--- Fold 1/20 ---
+Unified feature count for XGBoost: 178
+Fold 1 AUC: 0.920632
+
+--- Fold 2/20 ---
+Fold 2 AUC: 0.918629
+
+--- Fold 3/20 ---
+Fold 3 AUC: 0.918175
+
+--- Fold 4/20 ---
+Fold 4 AUC: 0.918970
+
+--- Fold 5/20 ---
+Fold 5 AUC: 0.923151
+
+--- Fold 6/20 ---
+Fold 6 AUC: 0.918637
+
+--- Fold 7/20 ---
+Fold 7 AUC: 0.916946
+
+--- Fold 8/20 ---
+Fold 8 AUC: 0.920667
+
+--- Fold 9/20 ---
+Fold 9 AUC: 0.918956
+
+--- Fold 10/20 ---
+Fold 10 AUC: 0.918769
+
+--- Fold 11/20 ---
+Fold 11 AUC: 0.918939
+
+--- Fold 12/20 ---
+Fold 12 AUC: 0.919920
+
+--- Fold 13/20 ---
+Fold 13 AUC: 0.921775
+
+--- Fold 14/20 ---
+Fold 14 AUC: 0.920751
+
+--- Fold 15/20 ---
+Fold 15 AUC: 0.917660
+
+--- Fold 16/20 ---
+Fold 16 AUC: 0.921593
+
+--- Fold 17/20 ---
+Fold 17 AUC: 0.919224
+
+--- Fold 18/20 ---
+Fold 18 AUC: 0.917994
+
+--- Fold 19/20 ---
+Fold 19 AUC: 0.918331
+
+--- Fold 20/20 ---
+Fold 20 AUC: 0.915567
+
+Overall CV AUC: 0.919253
+
+OOF file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/oof_self/oof_predictions_12.csv
+Submission file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/sub_self/submission_12.csv
+Analysis file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/whole analysis/analysis_12.txt
+Experiment OOF file: /root/aicloud-data/Kaggle_S6E3/experiments/oof/EXP-P3-002.csv
+Experiment Submission file: /root/aicloud-data/Kaggle_S6E3/experiments/submissions/EXP-P3-002.csv
+Experiment Analysis file: /root/aicloud-data/Kaggle_S6E3/experiments/analysis/EXP-P3-002.txt

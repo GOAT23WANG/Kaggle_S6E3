@@ -1,0 +1,48 @@
+Run Number: 3
+Experiment ID: EXP-P0-002
+Run Profile: unified_v16
+Parent Baseline: BASE-SIMPLE-5FOLD-TE-XGB
+Run Time: 2026-03-21 11:17:10
+train shape: (594194, 21)
+test shape: (254655, 20)
+train columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+test columns: ['id', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges']
+
+Feature flags: {'orig_proba': True, 'distribution': True, 'digit': True, 'ngram': True}
+Unified feature count before encoding: 121
+Model Params:
+n_estimators: 50000
+learning_rate: 0.0063
+max_depth: 5
+subsample: 0.81
+colsample_bytree: 0.32
+min_child_weight: 6
+reg_alpha: 3.5017
+reg_lambda: 1.2925
+gamma: 0.79
+random_state: 42
+early_stopping_rounds: 500
+objective: binary:logistic
+eval_metric: auc
+enable_categorical: False
+device: cpu
+tree_method: hist
+verbosity: 0
+
+--- Fold 1/2 ---
+Unified feature count for XGBoost: 178
+Fold 1 AUC: 0.918617
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold1_run3.json
+
+--- Fold 2/2 ---
+Fold 2 AUC: 0.918375
+Saved model: /root/aicloud-data/Kaggle_S6E3/models/xgb_unified_v16_fold2_run3.json
+
+Overall CV AUC: 0.918487
+
+OOF file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/oof_self/oof_predictions_3.csv
+Submission file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/sub_self/submission_3.csv
+Analysis file: /root/aicloud-data/Kaggle_S6E3/Previously Trained Files/whole analysis/analysis_3.txt
+Experiment OOF file: /root/aicloud-data/Kaggle_S6E3/experiments/oof/EXP-P0-002.csv
+Experiment Submission file: /root/aicloud-data/Kaggle_S6E3/experiments/submissions/EXP-P0-002.csv
+Experiment Analysis file: /root/aicloud-data/Kaggle_S6E3/experiments/analysis/EXP-P0-002.txt
