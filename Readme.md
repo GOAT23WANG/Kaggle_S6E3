@@ -9,16 +9,27 @@
 
 English | [中文](#中文说明)
 
+版权声明：`Copyright (c) 2024 shixuan Wang and contributors  All rights reserved.`
+
 ## Table of Contents
 
-- [Overview](#overview)
-- [Quick Start](#quick-start)
-- [Repository Structure](#repository-structure)
-- [Training Pipeline](#training-pipeline)
-- [Outputs](#outputs)
-- [Screenshots](#screenshots)
-- [Notes](#notes)
-- [中文说明](#中文说明)
+- [Kaggle S6E3 | Customer Churn Prediction](#kaggle-s6e3--customer-churn-prediction)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Quick Start](#quick-start)
+  - [Repository Structure](#repository-structure)
+  - [Training Pipeline](#training-pipeline)
+  - [Outputs](#outputs)
+  - [Screenshots](#screenshots)
+  - [Notes](#notes)
+  - [中文说明](#中文说明)
+    - [项目简介](#项目简介)
+    - [快速开始](#快速开始)
+    - [核心信息](#核心信息)
+    - [训练流程](#训练流程)
+    - [结果产物](#结果产物)
+    - [截图占位](#截图占位)
+    - [许可证](#许可证)
 
 ## Overview
 
@@ -42,7 +53,10 @@ S6E3/
 |  `- WA_Fn-UseC_-Telco-Customer-Churn.csv
 |- src/
 |  |- features.py
-|  `- train.py
+|  |- config.py
+|  |- plotting.py
+|  |- train.py
+|  `- utils.py
 |- models/
 |  |- xgb_fold1_run1.json
 |  |- xgb_fold2_run1.json
@@ -66,6 +80,7 @@ S6E3/
 |  |- sub_formal/
 |  |- sub_self/
 |  |  `- submission_1.csv
+|  |- visuals/
 |  `- whole analysis/
 |- requirements.txt
 |- LICENSE
@@ -80,13 +95,19 @@ S6E3/
 3. Build 5-fold `StratifiedKFold`
 4. Apply target encoding in `src/features.py`
 5. Train XGBoost with early stopping
-6. Save fold models, OOF predictions, and submission file
+6. Save fold models, OOF predictions, submission file, analysis logs, and plots
 
 ## Outputs
 
 - `models/xgb_fold*_run1.json`
 - `Previously Trained Files/oof_self/oof_predictions_1.csv`
 - `Previously Trained Files/sub_self/submission_1.csv`
+- `Previously Trained Files/whole analysis/analysis_*.txt`
+- `Previously Trained Files/whole analysis/eval_history_*.json`
+- `Previously Trained Files/visuals/fold_auc_*.png`
+- `Previously Trained Files/visuals/summary_*.png`
+- `Previously Trained Files/visuals/feature_importance_*.png`
+- `Previously Trained Files/visuals/oof_distribution_*.png`
 
 ## Screenshots
 
@@ -106,6 +127,8 @@ S6E3/
 ## 中文说明
 
 [English](#kaggle-s6e3--customer-churn-prediction) | 中文
+
+版权声明：`Copyright (c) 2024 yuxuan zhou @mornscience All rights reserved.`
 
 ### 项目简介
 
@@ -133,13 +156,19 @@ python src/train.py
 3. 构建 5 折分层交叉验证
 4. 在 `src/features.py` 中执行目标编码
 5. 使用早停策略训练 XGBoost
-6. 保存各折模型、OOF 结果与提交文件
+6. 保存各折模型、OOF 结果、submission、analysis 日志与可视化图表
 
 ### 结果产物
 
 - `models/xgb_fold*_run1.json`
 - `Previously Trained Files/oof_self/oof_predictions_1.csv`
 - `Previously Trained Files/sub_self/submission_1.csv`
+- `Previously Trained Files/whole analysis/analysis_*.txt`
+- `Previously Trained Files/whole analysis/eval_history_*.json`
+- `Previously Trained Files/visuals/fold_auc_*.png`
+- `Previously Trained Files/visuals/summary_*.png`
+- `Previously Trained Files/visuals/feature_importance_*.png`
+- `Previously Trained Files/visuals/oof_distribution_*.png`
 
 ### 截图占位
 
