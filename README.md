@@ -9,7 +9,7 @@
 
 English | [中文](#中文说明)
 
-版权声明：'Copyright (c) 2024 shixuan Wang and contributors  All rights reserved.'
+版权声明：' Copyright (c) 2024 shixuan Wang and contributors  All rights reserved.'
 
 ## Table of Contents
 
