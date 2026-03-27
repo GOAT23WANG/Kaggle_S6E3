@@ -1,0 +1,113 @@
+Run Number: 4
+Run Time: 2026-03-26 17:04:53
+train shape: (594194, 21)
+test shape: (254655, 20)
+orig shape: (7043, 21)
+
+Config:
+n_folds=20
+inner_folds=5
+num_boost_round=12000
+early_stopping_rounds=500
+
+train feature shape: (594194, 119)
+test feature shape: (254655, 118)
+
+Model Params:
+objective: binary:logistic
+eval_metric: auc
+max_depth: 5
+eta: 0.0063
+subsample: 0.81
+colsample_bytree: 0.32
+min_child_weight: 6
+reg_alpha: 3.5017
+reg_lambda: 1.2925
+gamma: 0.79
+seed: 42
+
+Fold 1 AUC: 0.920596
+Best iteration: 11385
+Saved model: ./models\xgb_fold1_run4.json
+
+Fold 2 AUC: 0.918728
+Best iteration: 7143
+Saved model: ./models\xgb_fold2_run4.json
+
+Fold 3 AUC: 0.918132
+Best iteration: 9309
+Saved model: ./models\xgb_fold3_run4.json
+
+Fold 4 AUC: 0.919074
+Best iteration: 7562
+Saved model: ./models\xgb_fold4_run4.json
+
+Fold 5 AUC: 0.923125
+Best iteration: 7935
+Saved model: ./models\xgb_fold5_run4.json
+
+Fold 6 AUC: 0.918571
+Best iteration: 8448
+Saved model: ./models\xgb_fold6_run4.json
+
+Fold 7 AUC: 0.916938
+Best iteration: 11613
+Saved model: ./models\xgb_fold7_run4.json
+
+Fold 8 AUC: 0.920588
+Best iteration: 8990
+Saved model: ./models\xgb_fold8_run4.json
+
+Fold 9 AUC: 0.919015
+Best iteration: 11637
+Saved model: ./models\xgb_fold9_run4.json
+
+Fold 10 AUC: 0.918826
+Best iteration: 9091
+Saved model: ./models\xgb_fold10_run4.json
+
+Fold 11 AUC: 0.919077
+Best iteration: 8167
+Saved model: ./models\xgb_fold11_run4.json
+
+Fold 12 AUC: 0.919802
+Best iteration: 7314
+Saved model: ./models\xgb_fold12_run4.json
+
+Fold 13 AUC: 0.921753
+Best iteration: 8896
+Saved model: ./models\xgb_fold13_run4.json
+
+Fold 14 AUC: 0.920695
+Best iteration: 9311
+Saved model: ./models\xgb_fold14_run4.json
+
+Fold 15 AUC: 0.917700
+Best iteration: 11859
+Saved model: ./models\xgb_fold15_run4.json
+
+Fold 16 AUC: 0.921681
+Best iteration: 8926
+Saved model: ./models\xgb_fold16_run4.json
+
+Fold 17 AUC: 0.919015
+Best iteration: 8739
+Saved model: ./models\xgb_fold17_run4.json
+
+Fold 18 AUC: 0.918020
+Best iteration: 7690
+Saved model: ./models\xgb_fold18_run4.json
+
+Fold 19 AUC: 0.918347
+Best iteration: 8312
+Saved model: ./models\xgb_fold19_run4.json
+
+Fold 20 AUC: 0.915631
+Best iteration: 10552
+Saved model: ./models\xgb_fold20_run4.json
+
+Overall CV AUC: 0.919257
+
+OOF file: ./Previously Trained Files\oof_self\oof_predictions_4.csv
+Submission file: ./Previously Trained Files\sub_self\submission_4.csv
+Analysis file: ./Previously Trained Files\whole analysis\analysis_4.txt
