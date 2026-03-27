@@ -9,7 +9,7 @@
 
 English | [中文](#中文说明)
 
-版权声明：' Copyright (c) 2024 shixuan Wang and contributors  All rights reserved.'
+版权声明：`Copyright (c) 2024 shixuan Wang and contributors  All rights reserved.`
 
 ## Table of Contents
 
@@ -119,7 +119,7 @@ S6E3/
 
 [English](#kaggle-s6e3--customer-churn-prediction) | 中文
 
-Copyright (c) 2024 yuxuan zhou @mornscience All rights reserved.
+版权声明：`Copyright (c) 2024 yuxuan zhou @mornscience All rights reserved.`
 
 ### 项目简介
 
